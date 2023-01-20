@@ -9,9 +9,9 @@ services:
         PYTHON_VERSION: '3.10'
     environment:
       - POSTGRES_DBNAME=app
-      - POSTGRES_USERNAME=app
-      - POSTGRES_PASSWORD=app
-      - POSTGRES_HOST=db
+      - POSTGRES_USERNAME=promise@postgresqlpls
+      - POSTGRES_PASSWORD=password@123
+      - POSTGRES_HOST=postgresqlpls.postgres.database.azure.com
     depends_on:
       - db
     restart: unless-stopped
